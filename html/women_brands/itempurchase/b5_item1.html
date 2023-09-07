@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>E-Drove Clothing</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<link rel="stylesheet" type="text/css" href="../../../css/itempurchase.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script>
+			function fetch(){
+				var get = document.getElementById("get").value;
+				document.getElementById("put").value = get;
+			}
+
+			function mBuy() {
+				alert("Thank You for Purchasing!");
+			}
+
+			function mAdd() {
+				alert("Added to Cart!");
+			}
+		</script>
+	</head>
+	<body>
+
+		<header>
+			<img class="group_logo" src="../../../img/logo/mainlogo.png">
+			<nav>
+				<ul class="menu_links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../../profile.html">Profile</a></li>
+					<li><a href="../../login.html">Login</a></li>
+		            <li><a href="../../cart.html">Shopping cart</a></li>
+		            <li><a href="../../all.html">All Products</a></li>
+				</ul>				
+				<form class="search_box">
+						<input type="text" placeholder="Seach Here!" name="usersearch">
+						<button type="submit" id="search"><img src="../../../img/mis/search.png"></button>
+				</form>	
+			</nav>
+			<a href="../../about.html" class="us"><button>About Us</button></a>
+		</header>
+
+			<br><br><br>
+
+
+			<div class="container">
+				<div class="banner">
+				<span class="active"><h1 class="men_b_title">Purchase Page</h1></span>
+					<h2>Reversible Check and Leather TB Belt</h2>
+						<span><img src="../../../img/mis/women_brands_item_pic/women_brand5_1.jpg"><hr color="purple" width="485px" size="5"></span>
+							<ul class="form">
+								<li><p>Price: 140$</p></li>
+								<li>Color: <input class="color" type="color"></li>
+								<li>Size: <input type="radio" name="size">S <input type="radio" name="size">M <input type="radio" name="size">L <input type="radio" name="size">XL </li>
+								<li>Type: Belt</li>
+								<li>Items: <input type="range" min="1" max="10" id="get" value="1" onchange="fetch()">
+									<input type="text" value="1" id="put">
+								</li>
+
+
+								<br>
+								<hr color="purple" width="200px" size="5">
+								<li><a href="../../cart.html"><input class="cart" type="submit" value="Add to Cart" onclick="mAdd()"></a></li>
+								<li><a href="../../index.html"><input class="buy" type="submit" value="Buy Now" onclick="mBuy()"></a></li>
+
+							</ul>
+							
+						<div class="feedback-design">
+							<p class="feedback-header">Reviews:</p>
+							<br>
+							<hr style="position: relative; left: 12px;"l color="purple" width="578px" size="5">
+							<textarea rows="10" cols="30" placeholder="Enter comment here"></textarea>
+							<input class="buy" type="submit" value="Post">
+
+						</div>
+
+				</div>
+			</div>
+
+		<footer>
+			<!--Contact us here-->
+			<div class="contact-dtls">
+				<h3>E-Drove Clothing.</h3>
+				<p class="foot-p">As Asia’s Online Fashion Destination, we hand picked styles that suited for everyone through an ever-expanding range of products from the international and local brands, putting you at the centre of it all.</p>
+				<ul class="socials">
+					<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+		            <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+		            <li><a href="https://www.google.com/"><i class="fa fa-google-plus"></i></a></li>
+		            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+		            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+		            <br>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p class="foot-p">Copyright &copy;2022-2023 E-Drove Clothing. Design By Group <span>BSIT -1st Year College/Group-5</span></p>
+			</div>
+		</footer>
+	</body>
+</html>

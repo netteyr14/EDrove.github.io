@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>E-Drove Clothing</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<link rel="stylesheet" type="text/css" href="../css/cart.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script>
+			function rev(){
+				var get = document.getElementById("counter").value;
+				document.getElementById("counter").value = get-1;
+			}
+			function rev1(){
+				var get1 = document.getElementById("counter1").value;
+				document.getElementById("counter1").value = get1-1;
+			}
+			function rev2(){
+				var get2 = document.getElementById("counter2").value;
+				document.getElementById("counter2").value = get2-1;
+			}
+			function message(){
+				alert("Thank You for Purchasing!");
+			}
+		</script>
+	</head>
+	<body>
+
+		<header>
+			<img class="group_logo" src="../img/logo/mainlogo.png">
+
+			<nav>
+				<ul class="menu_links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="login.html">Login</a></li>
+		            <li><a href="cart.html" class="active">Shopping cart</a></li>
+		            <li><a href="all.html">All Products</a></li>
+				</ul>				
+				<form class="search_box">
+						<input type="text" placeholder="Seach Here!" name="usersearch">
+						<button type="submit" id="search"><img src="../img/mis/search.png"></button>
+				</form>	
+			</nav>
+			<a href="about.html" class="us"><button>About Us</button></a>
+		</header>
+
+			<br><br><br>
+
+		<div class="banner">
+			<div class="container">
+				<span class="active"><h1 class="men_b_title">Shopping Cart</h1></span>
+				
+				<table class="table1">
+					<ul class="bg">
+
+					<tr class="t-head">
+						<th class="head1">Products</th>
+						<th class="head2">Quatity</th>
+						<th class="head3">Subtotal</th>
+					</tr>
+					<tr class="t-details">
+						<td><img src="../img/mis/men_brands_item_pic/men_brand1_1.jpg"><span class="pname">Men's Button Down Jacket</span></td>
+						<td><input style="width: 20px; position: relative; left: 100px; bottom: 20px; text-align: center;" type="text" value="10" id="counter"></td>
+						<td><p class="price">28$</p></td>
+						<td><input class="Remove" type="submit" value="Remove" onclick="rev()"></td>
+					</tr>
+					<tr class="t-details">
+						<td><img src="../img/mis/men_brands_item_pic/men_brand1_2.jpg"><span class="pname">Men's Long Sleeve Polo</span></td>
+						<td><input style="width: 20px; position: relative; left: 100px; bottom: 20px; text-align: center;" type="text" value="10" id="counter1"></td>
+						<td><p class="price">35$</p></td>
+						<td><input class="Remove" type="submit" value="Remove" onclick="rev1()"></td>
+					</tr>
+					<tr class="t-details">
+						<td><img src="../img/mis/men_brands_item_pic/men_brand1_3.jpg"><span class="pname">Bench Everyday Men's Bukcet Hat</span></td>
+						<td><input style="width: 20px; position: relative; left: 100px; bottom: 20px; text-align: center;" type="text" value="10" id="counter2"></td>
+						<td><p class="price">22$</p></td>
+						<td><input class="Remove" type="submit" value="Remove" onclick="rev2()"></td>
+					</tr>
+					</ul>
+				</table>
+				<br>
+				<table class="table2">
+					<hr style="border: 4px solid #ff9900; border-radius: 4px; position: relative; left: 650px; bottom: 415px;" width="350px">
+					
+					<br>
+						<tr>
+							<th>Subtotal:</th>
+							<td>85$</td>
+						</tr>
+						<tr>
+							<th>Tax:</th>
+							<td>35$</td>
+						</tr>
+						<tr>
+							<th>Total:</th>
+							<td>120$</td>
+						</tr>
+				</table>
+				<a href="index.html" onclick="message()"><input class="check" type="submit" value="Check Out"></a>
+				
+			</div>
+		</div>		
+
+		<footer>
+			<!--Contact us here-->
+			<div class="contact-dtls">
+				<h3>E-Drove Clothing.</h3>
+				<p>As Asia’s Online Fashion Destination, we hand picked styles that suited for everyone through an ever-expanding range of products from the international and local brands, putting you at the centre of it all.</p>
+				<ul class="socials">
+					<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+		            <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+		            <li><a href="https://www.google.com/"><i class="fa fa-google-plus"></i></a></li>
+		            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+		            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+		            <br>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p>Copyright &copy;2022-2023 E-Drove Clothing. Design By Group <span>BSIT -1st Year College/Group-5</span></p>
+			</div>
+		</footer>
+	</body>
+</html>

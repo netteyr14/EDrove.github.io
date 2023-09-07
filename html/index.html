@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>E-Drove Clothing</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+
+		<header>
+			<img class="group_logo" src="../img/logo/mainlogo.png">
+			<nav>
+				<ul class="menu_links">
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="login.html">Login</a></li>
+		            <li><a href="cart.html">Shopping cart</a></li>
+		            <li><a href="all.html">All Products</a></li>
+				</ul>				
+				<form class="search_box">
+						<input type="text" placeholder="Seach Here!" name="usersearch">
+						<button type="submit" id="search"><img src="../img/mis/search.png"></button>
+				</form>	
+			</nav>
+			<a href="about.html" class="us"><button>About Us</button></a>
+		</header>
+
+			<br><br><br>
+
+			<div class="banner">
+
+				<div class="img-slider">
+			<div class="highlights">
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+
+				<div class="slide start">
+					<img src="../img/displays/first_slide.jpg" width="1000px">
+				</div>
+				<div class="slide">
+					<img src="../img/displays/second_slide.jpg">
+				</div>
+				<div class="slide">
+					<img src="../img/displays/third_slide.jpg">
+				</div>
+				<div class="slide">
+					<img src="../img/displays/fourth_slide.jpg">
+				</div>
+
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+				</div>
+			</div>
+
+			<div class="navigation-manual">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var counter = 1;
+			setInterval(function(){
+				document.getElementById('radio' + counter).checked = true;
+				counter++;
+				if(counter > 4){
+					counter = 1;
+				}
+			}, 5000);
+		</script>
+
+				<ul class="img-selection">
+					<li><a class="menu-men" href="./2-selections/men_brands.html">Men's Fashion</a></li>
+					<li><a class="menu-women" href="./2-selections/women_brands.html">Women's Fashion</a></li>
+				</ul>
+			</div>	
+
+		<footer>
+			<!--Contact us here-->
+			<div class="contact-dtls">
+				<h3>E-Drove Clothing.</h3>
+				<p>As Asia’s Online Fashion Destination, we hand picked styles that suited for everyone through an ever-expanding range of products from the international and local brands, putting you at the centre of it all.</p>
+				<ul class="socials">
+					<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+		            <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+		            <li><a href="https://www.google.com/"><i class="fa fa-google-plus"></i></a></li>
+		            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+		            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+		            <br>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p>Copyright &copy;2022-2023 E-Drove Clothing. Design By Group <span>BSIT -1st Year College/Group-5</span></p>
+			</div>
+		</footer>
+	</body>
+</html>
